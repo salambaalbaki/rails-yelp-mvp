@@ -11,6 +11,13 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-light p-3 mb-3" style="background-color: #e3f2fd;">
+      <%= link_to "Yelp", restaurants_path, class: "navbar-brand"%>
+      <div>
+        <%= link_to "Add a restaurant", new_restaurant_path, class: "btn btn-primary"%>
+        <%= link_to 'View all restaurants', restaurants_path, class: "btn btn-secondary"%>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>

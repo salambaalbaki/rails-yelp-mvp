@@ -1,0 +1,10 @@
+<h1>All Restaurants</h1>
+
+<br>
+
+<% @restaurants.each do |restaurant| %>
+  <p><%= "#{restaurant.name} - #{restaurant.category}"%>
+    <span><%= link_to "View", restaurant_path(restaurant) %></span>
+  </p>
+  <hr>
+<% end %>
